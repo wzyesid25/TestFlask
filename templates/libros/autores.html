@@ -1,0 +1,20 @@
+{% extends "plantilla_baseAutores.html" %}   
+    
+{% block titulo %} Autores en la biblioteca: {{ autores|length }} {% endblock %}
+
+{% block contenido %}
+<div class="container container-sm">
+    <h1> Mostrando {{ autores|length }} Autores: </h1> 
+    <div class="list-group">
+        {% for key, value in autores.items() %}   
+            <a href="autor/{{key}}" class="list-group-item list-group-item-action">
+                {{value.titulo}}
+            </a>
+        {% endfor %}
+    </div>
+    <br>
+    <a href="autores/autor/"><button type="button" class="btn btn-primary btn-lg"> Nuevo Autor </button></a>
+</div>  
+{% endblock %}
+
+ 

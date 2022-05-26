@@ -1,0 +1,39 @@
+{% extends "plantilla_base.html" %}
+{% if libro_e %}
+    {% set id_libro=libro_e.id %}
+{% else %}
+    {% set id_libro="nuevo libro" %}
+{% endif %}
+{% block titulo %} 
+    Formulario: {{id_libro}}
+{% endblock %}
+{% block contenido %}
+<h1>Formulario libro: {{id_libro}}</h1>
+<div class="container container-sm">
+    <form action="" method="post">
+        <div class="mb-3">
+            <label id="id" for="titulo" class="form-label">Titulo del libro </label>
+            <input type="text" class="form-control" id="titulo" value="{{libro_e.titulo}}" name="titulo">
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripcion del libro</label>
+            <input type="text" class="form-control" id="descripcion" value="{{libro_e.descripcion}}" name="descripcion">
+        </div>
+        <div class="mb-3">
+            <label for="editorial" class="form-label">Editorial</label>
+            <input type="text" class="form-control" id="editorial" value="{{libro_e.editorial}}" name="editorial">
+        </div>
+        <div class="mb-3">
+            <label for="noPgns" class="form-label">Número de Paginas</label>
+            <input type="number" class="form-control" id="noPgns" value="{{libro_e.noPgns}}" name="noPgns">
+        </div>
+        <div class="mb-3">
+            <label for="fecha" class="form-label">Año</label>
+            <input type="date" class="form-control" id="fecha" value="{{libro_e.Año}}"  name="fecha">
+        </div>
+        <button type="submit" class="btn btn-primary" id="guardar"  name="guardar"> Guardar</button>  
+    </form>
+</div>
+{% endblock %}
+
+

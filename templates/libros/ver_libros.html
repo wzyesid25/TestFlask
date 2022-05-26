@@ -1,0 +1,23 @@
+{% extends "plantilla_base.html" %}
+
+{% block titulo %} Libros en la biblioteca: {{ libro|length }} {% endblock %}
+
+{% block contenido %}
+<div class="container container-sm">
+    <form action="" method ="POST"></form>
+    <h1> Mostrando {{ libro|length }} Caracteristicas: </h1> 
+    <div class="list-group">
+        {% for key, value in libro.items() %}   
+            <p>
+                {{value}}
+            </p>
+        {% endfor %}
+    </div>
+    <br>
+    <a href="../../libros/libro/{{libro.id}}"><button type="button" class="btn btn-primary btn-lg"> Editar Caracteristicas </button></a>
+    <a href="../../"><button type="button" class="btn btn-primary btn-lg"> Borrar Caracteristicas </button></a>
+
+        <button value="">prro</button>
+
+</div>  
+{% endblock %}

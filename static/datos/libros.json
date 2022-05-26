@@ -1,0 +1,66 @@
+{
+  "2": {
+    "id": 2,
+    "titulo": "Cien a\u00f1os de soledad",
+    "descripcion": "Libro de Gabriel Garcia Marquez",
+    "editorial": "Sudamericana",
+    "noPgns": "471",
+    "fecha": "1997-03-05"
+  },
+  "3": {
+    "id": 3,
+    "titulo": "El diario de Ana Frank",
+    "descripcion": "Novela de la segunda guerra mundial",
+    "editorial": "Diarios de ana frank",
+    "noPgns": "250",
+    "fecha": "1947-06-25"
+  },
+  "4": {
+    "id": 4,
+    "titulo": "El coronel No tiene quien le escriba",
+    "descripcion": "Libro de Gabo ( Gabriel Garc\u00eda M\u00e1rquez)",
+    "editorial": "Sudamericana",
+    "noPgns": "110",
+    "fecha": "1993-05-01"
+  },
+  "5": {
+    "id": 5,
+    "titulo": "la odisea ",
+    "descripcion": "poema",
+    "editorial": "editorial 1 ",
+    "noPgns": "155",
+    "fecha": "1990-05-11"
+  },
+  "6": {
+    "id": 6,
+    "titulo": "Cien milagrosqq",
+    "descripcion": "qqqqq",
+    "editorial": "qqqq",
+    "noPgns": "88",
+    "fecha": ""
+  },
+  "7": {
+    "id": 7,
+    "titulo": "qweqeqe",
+    "descripcion": "eqweqeqe",
+    "editorial": "ewqeqeqe",
+    "noPgns": "2312313",
+    "fecha": "2022-05-12"
+  },
+  "8": {
+    "id": 8,
+    "titulo": "hrthrgdfg",
+    "descripcion": "hyughugbyukbu",
+    "editorial": "bhjb hjbhjkb",
+    "noPgns": "4444",
+    "fecha": "2022-05-17"
+  },
+  "9": {
+    "id": 9,
+    "titulo": "Del amor y otros Demonios",
+    "descripcion": "gabo",
+    "editorial": ".......",
+    "noPgns": "162",
+    "fecha": "2022-05-19"
+  }
+}

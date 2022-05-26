@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %} {% endblock %}</title>    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <script src="{{ url_for('static', filename='js/libros.js') }}"></script>
+</head>
+<body>
+{% block contenido %} 
+    <h1>Formulario libro: {{libros}} </h1>
+{% endblock %}
+</body>  
+</html>

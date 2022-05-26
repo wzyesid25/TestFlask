@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libros</title>
+</head>
+<body>
+    <h1>Pagina Principal de libros </h1>
+    {% if libros %}
+        <h2>Este es un espacio del libro  #{{libros}} !</h2><br>
+    {% else %}
+
+        <h2>Lista de libros</h2>    
+        
+            <ul>
+                <li>
+                    <a href="http://localhost:5000/libros/cienAñosdeSoledad">Cien Años De soledad</a> 
+                    
+                </li>
+
+                <li>                   
+                    <a href="http://localhost:5000/libros/librocoronel/">El coronel no tiene quien le escriba</a> 
+                </li>
+
+                <li>
+                    <a href="http://localhost:5000/libros/libroanaFrank/">Diario de Ana Frank</a> 
+                </li>
+
+                <li>
+                    <a href="http://localhost:5000/libros/libroodisea/">Odisea</a> 
+                </li>
+
+                <li>
+                    <a href="http://localhost:5000/libros/LibroDiariodeunLoco/">Diario de un loco</a> 
+                </li>
+
+             </ul>    
+        
+    <h3><a href="http://localhost:5000/libros/mision">Nuestra Mision</a></h3>
+    <h3><a href="http://localhost:5000/libros/vision">Nuestra Vision</a></h3>
+    <h3><a href="http://localhost:5000/libros/nosotros">Contactenos</a></h3>
+
+    
+    {% endif %}
+</body>
+</html>

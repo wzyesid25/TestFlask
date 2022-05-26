@@ -1,0 +1,18 @@
+{% extends "plantilla_base.html" %}       
+{% block titulo %} Libros en la biblioteca: {{ libros|length }} {% endblock %}
+{% block contenido %}
+<div class="container container-sm">
+    <h1> Mostrando {{ libros|length }} Libros: </h1> 
+    <div class="list-group">
+        {% for key, value in libros.items() %}   
+            <a href="libro/{{key}}" class="list-group-item list-group-item-action">
+                {{value.titulo}}
+            </a>
+        {% endfor %}
+    </div>
+    <br>
+    <a href="libros/libro/"><button type="button" class="btn btn-primary btn-lg"> Nuevo libro </button></a>
+</div>  
+{% endblock %}
+
+ 
